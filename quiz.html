@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Kenya E-Learning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar (Reused from Dashboard) -->
+    <nav class="navbar">
+        <div class="logo">Kenya E-Learn</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="subjects.html">Subjects</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><a href="ai-chat.html">AI Assistant</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="quiz">
+        <header class="quiz-header">
+            <h1 id="quiz-title">Loading Quiz...</h1>
+            <p id="quiz-details">Subject | Form | Time Limit: <span id="timer">00:00</span></p>
+        </header>
+
+        <section class="quiz-content">
+            <form id="quiz-form">
+                <div id="questions-container">
+                    <!-- Questions populated by JavaScript -->
+                </div>
+                <div class="quiz-actions">
+                    <button type="submit" class="btn" id="submit-quiz">Submit Quiz</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Results Modal (Hidden by Default) -->
+        <div class="modal" id="results-modal" style="display: none;">
+            <div class="modal-content">
+                <h2>Quiz Results</h2>
+                <p id="score">Score: --/--</p>
+                <div id="feedback">
+                    <!-- AI feedback populated here -->
+                </div>
+                <div class="modal-actions">
+                    <button class="btn" id="review-answers">Review Answers</button>
+                    <button class="btn" id="close-modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Kenya E-Learn. All rights reserved.</p>
+    </footer>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

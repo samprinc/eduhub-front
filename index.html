@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Kenya E-Learning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Kenya E-Learn</div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Dashboard</a></li>
+            <li><a href="subjects.html">Subjects</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><a href="ai-chat.html">AI Assistant</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="dashboard">
+        <header class="welcome">
+            <h1>Welcome, <span id="student-name">Brian</span></h1>
+            <p>Explore your lessons and track your progress for Form 2.</p>
+        </header>
+
+        <!-- Quick Links -->
+        <section class="quick-links">
+            <h2>Quick Links</h2>
+            <div class="card-grid">
+                <div class="card" onclick="window.location.href='subjects.html'">
+                    <i class="fas fa-book"></i>
+                    <h3>Subjects</h3>
+                    <p>Access lessons for all subjects.</p>
+                </div>
+                <div class="card" onclick="window.location.href='ai-chat.html'">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI Assistant</h3>
+                    <p>Get help with your studies.</p>
+                </div>
+                <div class="card" onclick="window.location.href='progress.html'">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Progress</h3>
+                    <p>Track your quiz scores.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Lessons -->
+        <section class="recent-lessons">
+            <h2>Recent Lessons</h2>
+            <div class="lesson-grid" id="lesson-grid">
+                <!-- Populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Notifications -->
+        <section class="notifications">
+            <h2>Notifications</h2>
+            <ul class="notification-list" id="notification-list">
+                <!-- Populated by JavaScript -->
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Kenya E-Learn. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

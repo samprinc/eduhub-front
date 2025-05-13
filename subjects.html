@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject List - KCSE E-Learning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">KCSE E-Learning</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="subjects.html" class="active">Subjects</a></li>
+                <li><a href="quizzes.html">Quizzes</a></li>
+                <li><a href="ai-chat.html">AI Assistant</a></li>
+            </ul>
+            <div class="language-toggle">
+                <button id="lang-toggle" aria-label="Toggle language">Kiswahili</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="subject-header">
+            <h1 id="subjects-title">Explore Subjects</h1>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search subjects..." aria-label="Search subjects">
+                <i class="fas fa-search"></i>
+            </div>
+        </section>
+
+        <section class="subject-grid" id="subject-grid">
+            <!-- Subject cards will be populated by JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 KCSE E-Learning. All rights reserved.</p>
+    </footer>
+
+    <script src="subjects.js"></script>
+</body>
+</html>
